@@ -14,8 +14,10 @@ for fruit in fruits:
 for i in change:
     print(f"I got {i}")
 
+print("{} is the value of i. from its last iteration.".format(i)) 
+
 #we can also build lists, first start with an empty one
-elements = list(range(0, 6))
+elements = list(range(0, 8))
 elements.append(i)
 ## then use the range function to do 0 to 5 counts
 #for i in range(0, 6):
