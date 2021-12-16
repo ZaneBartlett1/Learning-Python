@@ -1,3 +1,5 @@
+from sys import argv
+
 def add_i(x):
     i = 0
     numbers = []
@@ -15,4 +17,14 @@ def add_i(x):
     for num in numbers:
         print(num)
 
-add_i(x)
+num = argv[1]
+
+while True:
+    try:
+        parsed_num = int(num)
+        add_i(parsed_num)
+        exit()
+    except ValueError:
+        print("Youi stupid fuck. That's not an integer. Try again.\n")
+        num = input("> ")
+
